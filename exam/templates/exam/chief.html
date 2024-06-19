@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Management System Chief</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Light gray background */
+            color: #333; /* Dark gray text color */
+        }
+
+        header {
+            background-color: #1a1a1a; /* Dark gray header background */
+            padding: 15px;
+            text-align: center;
+            color: #fff; /* White header text color */
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column; /* Arrange the navigation links vertically */
+            align-items: center; /* Center the links horizontally */
+            margin-top: 40px; /* Add some space between the header and the nav */
+        }
+
+        nav a {
+            display: block;
+            width: 200px; /* Fixed width for links */
+            margin: 10px 0; /* Vertical margin between links */
+            padding: 20px;
+            text-decoration: none;
+            color: #fff; /* White link text color */
+            background-color: #4CAF50; /* Green link background color */
+            border-radius: 10px; /* Rounded corners */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effect */
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+            overflow: hidden; /* Hide overflowing box shadow */
+            background: linear-gradient(145deg, #4CAF50, #388E3C); /* Gradient background */
+        }
+
+        nav a:hover {
+            background: linear-gradient(145deg, #45a049, #318E3B); /* Darker gradient on hover */
+            transform: translateY(-5px); /* Move up slightly on hover */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Increase shadow size on hover */
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px; /* Add some space between the header and the content */
+            font-size: 2.5em;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.5em;
+            color: #ddd;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center; /* Center the container contents */
+            align-items: center;
+            height: calc(100vh - 100px); /* Full height minus header and nav height */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exam Management System</h1>
+        <h2>CHIEF DASHBOARD</h2>
+    </header>
+
+    <nav>
+        <a href="{% url 'announceExam' %}">
+            Announce Exam
+        </a>
+        <a href="{% url 'exam_view' %}">
+            Add Time Table
+        </a>
+        <a href="{% url 'allot_duty' %}">
+            Allot Duty
+        </a>
+        <a href="{% url 'edit_teacher' %}">
+            Add/Delete Teacher
+        </a>
+        <a href="{% url 'logout' %}">
+            Logout
+        </a>
+    </nav>
+
+    <div class="container">
+        <!-- Your existing content goes here -->
+    </div>
+</body>
+</html>

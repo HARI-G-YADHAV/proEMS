@@ -1,0 +1,366 @@
+course_id,course_title,course_code,lab_theory,dept_id,semester,syllabus_intro_year,grad_level
+342,Introduction to Computer and Programming,1C01CSC,T,9,1,2019,UG
+343,"Lab-I (Programming in C, Web Programming and Python Programming)",4C05CSC,L,9,1,2019,UG
+344,"Set Theory, Differential Calculus and Numerical Methods",1B01MAT,T,10,1,2019,UG
+345,Mathematics for Physics I,1C01MAT-PH,T,10,1,2019,UG
+346,Mathematics for Chemistry I,1C01MAT-CH,T,10,1,2019,UG
+347,Mathematics for Statistics I,1C01MAT-ST,T,10,1,2019,UG
+348,Introductory Statistics,1B01STA,T,12,1,2019,UG
+349,Basics Statistics,1C01STA,T,12,1,2019,UG
+350,Hindi Kavitha,1A07HIN,T,3,1,2019,UG
+351,Kavitha Aur Kahani,1A07-1HIN,T,3,1,2019,UG
+352,Naya Sahithya,1A07-2HIN,T,3,1,2019,UG
+353,Cytology and Angiosperm Anatomy,1B01PLS,T,7,1,2019,UG
+354,Core Practical I,4B05PLS,L,7,1,2019,UG
+355,"Microbiology, Phycology, Mycology and Lichenology",1C01BOT,L,7,1,2019,UG
+356,CE Practical - Botany,4C05PLS,L,7,1,2019,UG
+357,Protista and Non Chordata-I,1B01ZLG,T,13,1,2019,UG
+358,Practical-I,4B01ZLG-P,L,13,1,2019,UG
+359,Diversity of Life - I Protistans and Non Chordates,1C01ZLG,T,13,1,2019,UG
+360,Practical,4C05ZLG-P,L,13,1,2019,UG
+361,Malayala Kavitha - Adhunikam Adhunikaantharam,1B01MAL,T,5,1,2019,UG
+362,Paristhithi Dalit Linga Padavi Padanangal,1C01MAL,T,5,1,2019,UG
+363,Kadha Mathrukakal,1A07MAL,T,5,1,2019,UG
+364,Sahithyaroopangal,1A07-1MAL,T,5,1,2019,UG
+365,Sahitya Ganangal,1A07-2MAL,T,5,1,2019,UG
+366,Micro Economic Analysis-I,1B01ECO,T,1,1,2019,UG
+367,Introductory Economics-I,1C05ECO,T,1,1,2019,UG
+368,Population and Development,1C09ECO,T,1,1,2019,UG
+369,Communicative English,1A01ENG,T,2,1,2019,UG
+370,Readings on Kerala,1A02ENG,T,2,1,2019,UG
+371,History of India I: Pre-historic Times to c.200 CE,1B01HIS,T,4,1,2019,UG
+372,Management Concepts  Principles,1B01COM,T,14,1,2019,UG
+373,"Business Statistics and Basic Numerical
+Skills",1A11COM,T,14,1,2019,UG
+374,Theoretical and Inorganic Chemistry,1B01PCH,T,8,1,2019,UG
+375,Chemistry (For Physical and Biological Sciences),1C01CHE,T,8,1,2019,UG
+376,Mechanics 1,1B01PHY,T,11,1,2019,UG
+377,General Physics Practical I,4B05PHY,L,11,1,2019,UG
+378,Mechanics,1C01PHY,T,11,1,2019,UG
+379,Physics Practical,4C05PHY,L,11,1,2019,UG
+380,Readings on Life and Nature,2A03ENG,T,2,2,2019,UG
+381,Readings on Gender,2A04ENG,T,2,2,2019,UG
+382,Programming in C,2C02CSC,T,9,2,2019,UG
+383,"Lab-I (Programming in C, Web Programming and Python Programming)",4C05CSC,L,9,2,2019,UG
+384,Rachana Thatha Prayog,2A08HIN,T,3,2,2019,UG
+385,Vyavaharik HIndi,2A08-1HIN,T,3,2,2019,UG
+387,Kavitha Mathrukakal,2A08MAL,T,5,2,2019,UG
+388,Gadyaroopangal,2A08-1MAL,T,5,2,2019,UG
+389,Gadya Mathrukakal,2A08-2MAL,T,5,2,2019,UG
+390,Integral Calculus and Logic,2B02MAT,T,10,2,2019,UG
+391,Mathematics for Physics II,2C02MAT-PH,T,10,2,2019,UG
+392,Mathematics for Chemistry II,2C02MAT-CH,T,10,2,2019,UG
+393,Mathematics for Statistics II,2C02MAT-ST,T,10,2,2019,UG
+394,Cherukatha Sahithyam,2B02MAL,T,5,2,2019,UG
+395,Kavya and Vyakarana,2C01SKT-ML,T,16,2,2019,UG
+396,Mathematical Physics and Error Analysis,2B02PHY,T,11,2,2019,UG
+397,"Electricity, Magnetism and Thermodynamics",2C02PHY,T,11,2,2019,UG
+398,General Physics Practical I,4B05PHY,L,11,2,2019,UG
+399,Physics Practical,4C05PHY,L,11,2,2019,UG
+400,Non Chordata-II,2B02ZLG,T,13,2,2019,UG
+401,Diversity of Life-II Chordata Form and Functions,2C02ZLG,T,13,2,2019,UG
+402,Micro Economic Analysis-II,2B02ECO,T,1,2,2019,UG
+403,Economic Geography,2C10ECO,T,1,2,2019,UG
+404,Probability Theory and Mathematical Expectation,2B02STA,T,12,2,2019,UG
+405,Probability Theory and Random Variables,2C02STA,T,12,2,2019,UG
+406,Analytical and Inorganic Chemistry I,2B02PCH,T,8,2,2019,UG
+407,Chemistry (For Physical and Biological Sciences),2C02CHE,T,8,2,2019,UG
+408,Introductory Economics II,2C06ECO,T,1,2,2019,UG
+409,Cultural Transformations in Europe,2B02HIS,T,4,2,2019,UG
+410,Functional Applications of Management,2B02COM,T,14,2,2019,UG
+411,Quantitative Techniques for Business Decision,2C01COM,T,14,2,2019,UG
+412,Reproductive Botany,2B02BOT/PL,T,7,2,2019,UG
+413,"Bryology, Pteridology, Gymnosperm Biology, Palaeobotany, Phytopathology and Angiosperm Embryology",2C02BOT,T,7,2,2019,UG
+414,Basic Tools for Economic Analysis I,5B07ECO,T,12,5,2019,UG
+415,Heterodox Economics,5B08ECO,T,1,5,2019,UG
+416,Macroeconomic Analysis I,5B09ECO,T,1,5,2019,UG
+417,Developemnt Economics,5B10ECO,T,1,5,2019,UG
+418,Economics of Banking and Finance,5B11ECO,T,1,5,2019,UG
+419,Analytical and Inorganic Chemistry - II,5B07PCH,T,8,5,2019,UG
+420,Inorganic Chemistry,5B08PCH,T,8,5,2019,UG
+421,Physical Chemistry - I,5B09PCH,T,8,5,2019,UG
+422,Physical Chemistry - II,5B10PCH,T,8,5,2019,UG
+423,Practicals 3: Gravimetric Analysis,5B11PCH,L,8,5,2019,UG
+424,Practicals 4: Organic Chemistry,5B12PCH,L,8,5,2019,UG
+425,Project,5B13PCH,L,8,5,2019,UG
+426,Core Course Practicals 5 Physical Chemistry,6B18CHE,L,8,5,2019,UG
+427,"Evolution, Ethology and Research Methodology",5B05ZLG,T,13,5,2019,UG
+428,Animal Physiology,5B06ZLG,T,13,5,2019,UG
+429,Biochemistry and Biophysics,5B07ZLG,T,13,5,2019,UG
+430,Genetics,5B08ZLG,T,13,5,2019,UG
+431,Practical II and Practical III,6B02ZLG-P,L,13,5,2019,UG
+432,"Set Theory, Theory of Equations and Complex Numbers",5B05MAT,T,10,5,2019,UG
+433,Real Analysis I,5B06MAT,T,10,5,2019,UG
+434,Abstract Algebra,5B07MAT,T,10,5,2019,UG
+435,Differential Equations and Laplace Transforms,5B08MAT,T,10,5,2019,UG
+436,Vector Calculus,5B09MAT,T,10,5,2019,UG
+437,Statistical Inference - II,5B05STA,T,12,5,2019,UG
+438,Mathematical Methods for Statistics - I,5B06STA,T,12,5,2019,UG
+439,Regression Techniques and Time Series,5B07STA,T,12,5,2019,UG
+440,Statistical Quality Control and Operations Research,5B08STA,T,12,5,2019,UG
+441,Practical Using R - I,5B09STA,T,12,5,2019,UG
+442,Quantum Mechanics,5B06PHY,T,11,5,2019,UG
+443,Electrostatics and Magnetostatics,5B07PHY,T,11,5,2019,UG
+444,Thermodynamics and Statistical Mechanics,5B08PHY,T,11,5,2019,UG
+445,Electronics II,5B09PHY,T,11,5,2019,UG
+446,General Physics Practical II,6B15PHY,L,11,5,2019,UG
+447,Electronics Practical III,6B16PHY,L,11,5,2019,UG
+448,History of India IV: Colonial Transformations (1757-1885),5B07HIS,T,4,5,2019,UG
+449,History of India V: Making of the Nation (1885 -1947),5B08HIS,T,4,5,2019,UG
+450,History of Kerala II: Making of Modern Kerala (1500-1970),5B09HIS,T,4,5,2019,UG
+451,Method and Writing of History,5B10HIS,T,4,5,2019,UG
+452,Historiography: Perspectives and Practices,5B11HIS,T,4,5,2019,UG
+453,Readings on Democracy and Secularism,3A05ENG,T,2,3,2019,UG
+454,Gadya Sahithyam,3A09MAL,T,5,3,2019,UG
+455,Katha Sahithya,3A09HIN,T,3,3,2019,UG
+456,Python for Machine Learning,3B04ICSC,T,9,3,2020,PG
+457,Operating System,3B05ICSC,T,9,3,2020,PG
+458,Data Structures,3B06ICSC,T,9,3,2020,PG
+459,Lab-2 : Python for Machine Learning,3B07ICSC,L,9,3,2020,PG
+460,Lab-3 : Data Structures using C,3B08ICSC,L,9,3,2020,PG
+461,Computer Organization,4B09ICSC,T,9,4,2020,PG
+462,Database Management System,4B10ICSC,T,9,4,2020,PG
+463,Object Oriented Programming using Java,4B11ICSC,T,9,4,2020,PG
+464,Lab-4 : Object Oriented Programming using Java,4B12ICSC,L,9,4,2020,PG
+465,Lab-5: Database Management System,4B13ICSC,L,9,4,2020,PG
+466,Web Technology with Database Management System,3C03CSC,T,9,3,2019,UG
+467,"Lab 1: Programming In C, Web Programming and Python Programming",4C05CSC,L,9,3,2019,UG
+468,Business Research Methodology,5B07COM,T,14,5,2019,UG
+469,Income Tax Law and Practice,5B08COM,T,14,5,2019,UG
+470,Cost Accounting,5B09COM,T,14,5,2019,UG
+471,Banking Principles and Operations,5B10COM,T,14,5,2019,UG
+472,Co-operative Laws,5B11COM,T,14,5,2019,UG
+473,Angiosperm Systematics and Ethnobotany,5B06PLS,T,7,5,2019,UG
+474,Plant Physiology and Metabolism,5B07PLS,T,7,5,2019,UG
+475,"Microbiology, Mycology, Lichenology and Phytopathology",5B08PLS,T,7,5,2019,UG
+476,"Research Methodology, Instrumentation and Biostatistics",5B09PLS,T,7,5,2019,UG
+477,Core Practical II,6B14PLS,L,7,5,2019,UG
+478,Core Practical III,6B15PLS,L,7,5,2019,UG
+479,Mushroom Cultivation,5D01BOT,T,7,5,2019,UG
+480,Plantation Science,3A11PLS,T,7,3,2019,UG
+481,Horticulture,3A12PLS,T,7,3,2019,UG
+482,Plant Diversity I – Algae and Bryophytes,3B03PLS,T,7,3,2019,UG
+483,"Angiosperm Morphology, Anatomy and Systematics",3C03BOT,T,7,3,2019,UG
+484,Core Practical - I,4B05PLS,L,7,3,2019,UG
+485,Vyakarana Padanangal,5B07MAL,T,5,5,2019,UG
+486,Novel Sahithyam,5B08MAL,T,5,5,2019,UG
+487,Samskara Padanavum Sahithyavum,5B09MAL,T,5,5,2019,UG
+488,Kerala Samskaram,5B10MAL,T,5,5,2019,UG
+489,Nadodi Vijnaaneeyam,5B11MAL,T,5,5,2019,UG
+490,Vaikkom Muhammed Basheer - Paadavum Padanavum,5D04MAL,T,5,5,2019,UG
+491,Malayalasahithya Vimarshanam,3B03MAL,T,5,3,2019,UG
+492,Indian Kavyasidhaanthangal,3B04MAL,T,5,3,2019,UG
+493,Nataka and Vyakarana,3C02SKT-ML,T,16,3,2019,UG
+494,Organic Chemistry - I,3B04PCH,T,8,3,2019,UG
+495,Polymer Chemistry I,3A11PCH,T,8,3,2019,UG
+496,Polymer Chemistry II,3A12PCH,T,8,3,2019,UG
+497,Core Course Practicals 1 - Volumetric Analysis,3B03PCH,L,8,3,2019,UG
+498,Core Course Practicals 2 - Inorganic Qualitative Analysis,3B05PCH,L,8,3,2019,UG
+500,Chemistry (For Biological Science),3C03CHE-BS,T,8,3,2019,UG
+501,Chemistry (For Physical Science),3C03CHE-PS,T,8,3,2019,UG
+503,"Lab 1: Programming In C, Web Programming and Python Programming",4C05CSC,L,9,4,2019,UG
+504,Analytic Geometry and Applications of Derivatives,3B03MAT,T,10,3,2019,UG
+505,Mathematics for Chemistry III,3C03MAT-CH,T,10,3,2019,UG
+506,Mathematics for Physics III,3C03MAT-PH,T,10,3,2019,UG
+507,Mathematics for Statistics III,3C03MAT-ST,T,10,3,2019,UG
+508,Foundation Mathematics for Machine Learning I,3C03MAT-ICS,T,10,3,2020,UG
+509,Mechanics II,3B03PHY,T,11,3,2019,UG
+510,General Physics Practical I,4B05PHY,L,11,3,2019,UG
+511,Optics and Photonics,3C03PHY,T,11,3,2019,UG
+512,Physics Practical,4C05PHY,L,11,3,2019,UG
+513,Probability Distribution and Limit Theorems,3B03STA,T,12,3,2019,UG
+514,Probability Distributions,3C03STA,T,12,3,2019,UG
+515,Probability Distributions,3C03STA-ICS,T,12,3,2020,UG
+516,Chordata - I,3B03ZLG,T,13,3,2019,UG
+517,Animal Physiology,3C03ZLG,T,13,3,2019,UG
+518,Advanced Accounting,3B03COM,T,14,3,2019,UG
+519,Co-operative Principles,3B04COM,T,14,3,2019,UG
+520,Entrepreneurship Development,3A12COM,T,14,3,2019,UG
+521,Business Regulatory Framework,3C02COM,T,14,3,2019,UG
+522,Business Economics,3C03COM,T,14,3,2019,UG
+523,"History of India II: Polity, Society and Culture (c.200 to 1206)",3B03HIS,T,4,3,2019,UG
+524,History of Kerala I: Earliest Times to c.1500 CE,3B04HIS,T,4,3,2019,UG
+525,Foundations of Political Science,3C03POL,T,6,3,2019,UG
+526,Central Themes in Indian Economy,3B03ECO,T,1,3,2019,UG
+527,International Economics,3B04ECO,T,1,3,2019,UG
+528,Practical,4C05ZLG-P,L,13,3,2019,UG
+529,Practical-I,4B01ZLG-P,L,13,3,2019,UG
+530,Complementary Elective Course Practical,4C05CHE,L,8,3,2019,UG
+536,Foundation Mathematics for Machine Learning II,4C04MAT-ICS,T,10,4,2020,UG
+537,Statistical Inference,4C04STA-ICS,T,12,4,2020,UG
+538,Economic Historyof Modern India 1793 - 1947,3C07HIS,T,4,3,2019,UG
+539,Plant Propagation,5D03BOT,T,7,5,2019,UG
+540,Basic Accounting,5D01COM,T,14,5,2019,UG
+541,Principles of Management,5D03COM,T,14,5,2019,UG
+542,Environmental Studies,5D03CHE,T,8,5,2019,UG
+543,Web Technology,5D02CSC,T,9,5,2019,UG
+544,Python Programming,5D05CSC,T,9,5,2019,UG
+545,Basics of Economics,5D01ECO,T,1,5,2019,UG
+546,Social Reform Movements in Kerala,5D01HIS,T,4,5,2019,UG
+547,India's Struggle for Freedom,5D02HIS,T,4,5,2019,UG
+548,Cultural Heritage of North Malabar,5D03HIS,T,4,5,2019,UG
+549,Quantitative Arithmetic and Reasoning,5D02MAT,T,10,5,2019,UG
+550,Graph Theory,5D04MAT,T,10,5,2019,UG
+551,Biophysics,5D03PHY,T,11,5,2019,UG
+552,Electricity in Daily Life,5D05PHY,T,11,5,2019,UG
+553,Human Rights in India,5D01POL,T,6,5,2019,UG
+554,Herbal Literacy and Ethnobotanical Awareness,5D02SKT,T,16,5,2019,UG
+555,Literary Wolrd of Kalidasa,5D052SKT,T,16,5,2019,UG
+556,Sampling Techniques,5D02STA,T,12,5,2019,UG
+557,Index Numbers and Time Series,5D04STA,T,12,5,2019,UG
+558,Apiculture,5D02ZLG,T,13,5,2019,UG
+559,Sericulture,5D03ZLG,T,13,5,2019,UG
+560,Exercise is Medicine,5D05PED,T,15,5,2019,UG
+564,Sahithya Aur Prayog,2A08-2HIN,T,3,1,2019,UG
+568,Natak Aur Ekangi,4A10HIN,T,3,4,2019,UG
+569,Readings on Philosophy of Knowledge,4A06ENG,T,2,4,2019,UG
+574,Drishya Kala Sahithyam,4A10MAL,T,5,4,2019,UG
+575,Introduction to C Programming,1B01ICSC,T,9,1,2020,UG
+576,Lab 1 - C Programming,2B03ICSC,L,9,1,2020,UG
+577,Differential Calculus and Linear Algebra I,1C01MAT-ICS,T,10,1,2020,UG
+578,Basic Statistics,1C01STA-ICS,T,12,1,2020,UG
+579,Macro Economics Analysis II,6B13ECO,T,1,6,2019,UG
+580,Puublic Economics,6B14ECO,T,1,6,2019,UG
+581,Basic Econometric Analysis,6B15ECO,T,1,6,2019,UG
+582,Basic Tools for Economic Analysis II,6B12ECO,T,12,6,2019,UG
+583,Real Analysis II,6B10MAT,T,10,6,2019,UG
+584,Complex Analysis,6B11MAT,T,10,6,2019,UG
+585,"Numerical Methods, Fourier Series and Partial Differential Equations",6B12MAT,T,10,6,2019,UG
+586,Linear Algebra,6B13MAT,T,10,6,2019,UG
+587,Operations Research,6B14MAT,T,10,6,2019,UG
+588,Number Theory and Applications of Integrals,4B04MAT,T,10,4,2019,UG
+589,Mathematics for Chemistry IV,4C04MAT-CH,T,10,4,2019,UG
+590,Mathematics for Physics IV,4C04MAT-PH,T,10,4,2019,UG
+591,Mathematics for Statistics IV,4C04MAT-ST,T,10,4,2019,UG
+592,Research Methods and Techniques for Economic Analysis,4B05ECO,T,1,4,2019,UG
+593,Environmental Economics,4B06ECO,T,1,4,2019,UG
+594,Project,6B16ECO,P,1,6,2019,UG
+595,lndian National Movement,4C08HIS,T,4,4,2019,UG
+596,History of India VI: Developments since Independence (1947 - 2000),6B12HIS,T,4,6,2019,UG
+597,History of the Contemporary World (1945-2000),6B13HIS,T,4,6,2019,UG
+598,Indian Historiography,6B14HIS,T,4,6,2019,UG
+599,Project,6B15HIS,T,4,6,2019,UG
+600,Bhasha Shasthram,6B12MAL,T,5,6,2019,UG
+601,Maadhyama Padanam,6B13MAL,T,5,6,2019,UG
+602,Vivara Sankethika Vidyayum Malayalavum,6B14MAL,T,5,6,2019,UG
+603,Vivarthana Sahithyam,6B15MAL,T,5,6,2019,UG
+604,Project,6B16MAL,P,5,6,2019,UG
+605,Dynamics of Indian Political System,4C04POL,T,6,4,2019,UG
+606,Core Practical I,4B05PLS,L,7,2,2019,UG
+607,Core Practical I,4B05PLS,L,7,4,2019,UG
+608,CE Practical - Botany,4C05PLS,L,7,2,2019,UG
+609,CE Practical - Botany,4C05PLS,L,7,3,2019,UG
+610,CE Practical - Botany,4C05PLS,L,7,4,2019,UG
+611,Plant Diversity II – Pteridophytes and Gymnosperms,4B04PLS,T,7,4,2019,UG
+612,Plantation Management,4A13PLS,T,7,4,2019,UG
+613,Herbal Science,4A14PLS,T,7,4,2019,UG
+614,General Practical,4A15PLS,L,7,4,2019,UG
+615,Environmental Science and Phytogeography,6B10PLS,T,7,6,2019,UG
+616,"Genetics, Molecular Biology and Plant Breeding",6B11PLS,T,7,6,2019,UG
+617,Biotechnology and Bioinformatics,6B12PLS,T,7,6,2019,UG
+618,Evolution and Palaeobotany,6B13PLS,T,7,6,2019,UG
+619,Core Practical II,6B14PLS,L,7,6,2019,UG
+620,Core Practical III,6B15PLS,L,7,6,2019,UG
+621,Polymer Chemistry III,4A13PCH,T,8,4,2019,UG
+622,Polymer Chemistry III (Practical),4A13(A)PCH,L,8,4,2019,UG
+623,Polymer Chemistry IV,4A14PCH,T,8,4,2019,UG
+624,Organic Chemistry-II,4B06PCH,T,8,4,2019,UG
+625,Core Course Practicals 2 - Inorganic Qualitative Analysis,4B05PCH,L,8,4,2019,UG
+626,Core Course Practicals 1 - Volumetric Analysis,4B03PCH,L,8,4,2019,UG
+627,Computation Using Python,4C04CSC,T,9,4,2019,UG
+628,Introduction to Artificial Intelligence,5B14ICSC,T,9,5,2020,PG
+629,Software Engineering,5B15ICSC,T,9,5,2020,PG
+630,UNIX Shell Programming,5B16ICSC,T,9,5,2020,PG
+631,Introduction to Machine Learning,5B17ICSC,T,9,5,2020,PG
+632,Lab-6 : UNIX Shell Programming,5B18ICSC,L,9,5,2020,PG
+633,Lab-7: Machine Learning,5B19ICSC,L,9,5,2020,PG
+634,General Physics Practical I,4B05PHY,L,11,4,2019,UG
+635,Physics Practical,4C05PHY,L,11,4,2019,UG
+636,Electronics I,4B04PHY,T,11,4,2019,UG
+637,Electronics and Modern Physics,4C04PHY,T,11,4,2019,UG
+638,Solid State Physics and Spectroscopy,6B10PHY,T,11,6,2019,UG
+639,Optics and Photonics,6B11PHY,T,11,6,2019,UG
+640,"Nuclear, Particle and Astrophysics",6B12PHY,T,11,6,2019,UG
+641,Electrodynamics and Circuit Theory,6B13PHY,T,11,6,2019,UG
+642,Material Science,6B14PHY,T,11,6,2019,UG
+643,General Physics Practical II,6B15PHY,L,11,6,2019,UG
+644,Electronics Practical III,6B16PHY,L,11,6,2019,UG
+645,Project,6B17PHY,P,11,6,2019,UG
+646,Differential Calculus and Linear Algebra II,2C02MAT-ICS,T,10,2,2020,UG
+647,Probability Theory and Random Variables,2C02STA-ICS,T,12,2,2020,UG
+648,Statistical Inference – I,4B04STA,T,12,4,2019,UG
+649,Statistical Inference,4C04STA,T,12,4,2019,UG
+650,Mathematical Methods for Statistics – II,6B10STA,T,12,6,2019,UG
+651,Mathematical Methods for Statistics – III,6B11STA,T,12,6,2019,UG
+652,Sampling Techniques and Design of Experiments,6B12STA,T,12,6,2019,UG
+653,Applied Statistics,6B13ASTA,T,12,6,2019,UG
+654,Practical Using R – II,6B14STA,L,12,6,2019,UG
+655,Project,6B15STA,P,12,6,2019,UG
+656,Practical-I,4B01ZLG-P,L,13,2,2019,UG
+657,Practical-I,4B01ZLG-P,L,13,4,2019,UG
+658,Practical,4C05ZLG-P,L,13,2,2019,UG
+659,Practical,4C05ZLG-P,L,13,4,2019,UG
+660,Chordata-II and Comparative Anatomy,4B04ZLG,T,13,4,2019,UG
+661,Medical Zoology,4C04ZLG,T,13,4,2019,UG
+662,"Cell Biology, Immunology and Microbiology",6B09ZLG,T,13,6,2019,UG
+663,Molecular Biology and Bioinformatics,6B10ZLG,T,13,6,2019,UG
+664,Environmental Science,6B11ZLG,T,13,6,2019,UG
+665,Developmental Biology,6B12ZLG,T,13,6,2019,UG
+666,Core Practical II,6B02ZLG-P,L,13,6,2019,UG
+667,Core Practical III,6B03ZLG-P,L,13,6,2019,UG
+668,Project,6B13ZLG,P,13,6,2019,UG
+669,Corporate Accounting,4B05COM,T,14,4,2019,UG
+670,Management of Cooperatives,4B06COM,T,14,4,2019,UG
+671,General Informatics Skills,4A13COM,T,14,4,2019,UG
+672,Environmental Studies and Disaster Management,4A14COM,T,14,4,2019,UG
+673,Corporate Law and Business Regulations,4C04COM,T,14,4,2019,UG
+674,Financial Markets and Services,6B12COM,T,14,6,2019,UG
+675,Management Accounting,6B13COM,T,14,6,2019,UG
+676,Auditing and Corporate Governance,6B14COM,T,14,6,2019,UG
+677,Income Tax and GST,6B15COM,T,14,6,2019,UG
+678,Co-operative Accounting and Legislations,6B16COM,T,14,6,2019,UG
+679,Project,6B17COM,T,14,6,2019,UG
+680,Environmental History of India,6B16HIS-B,T,4,6,2019,UG
+681,History of India III: Sultanate to British Conquest (1206 -1757),4B05HIS,T,4,4,2019,UG
+682,Ideologies and Revolutions in the Modern World,4B06HIS,T,4,4,2019,UG
+683,Paaschaathya Saahithya Sidhaanthangal,4B05MAL,T,5,4,2019,UG
+684,Praacheena Madhyakaala Saahithyam,4B06MAL,T,5,4,2019,UG
+685,Malabar Padanangal,4C04MAL,T,5,4,2019,UG
+686,Complementary Elective Course Practical,4C05CHE,L,8,1,2019,UG
+687,Complementary Elective Course Practical,4C05CHE,L,8,2,2019,UG
+688,Polymer Chemistry II (Practical),3A12(A)PCH,L,8,3,2019,UG
+689,Complementary Elective Course Practical,4C05CHE,L,8,4,2019,UG
+690,Chemistry (For Biological Science),4C04CHE-BS,T,8,4,2019,UG
+691,Chemistry (For Physical Science),4C04CHE-PS,T,8,4,2019,UG
+692,Organic Chemistry III,6B14PCH,T,8,6,2019,UG
+693,Physical Chemistry III,6B15PCH,T,8,6,2019,UG
+694,Physical Methods in Chemistry,6B16PCH,T,8,6,2019,UG
+695,Environmental Chemistry,6B17PCH,T,8,6,2019,UG
+696,Core Course Practicals 5 Physical Chemistry,6B18CHE,L,8,6,2019,UG
+697,Practicals 3: Gravimetric Analysis,6B11PCH,L,8,6,2019,UG
+698,Practicals 4: Organic Chemistry,6B12PCH,L,8,6,2019,UG
+699,Project,6B13PCH,L,8,6,2019,UG
+700,"Plant Physiology, Ecology and Applied Botany",4C04BOT,T,7,4,2019,UG
+701,Sahithya Aur Prayog,2A08-2HIN,T,3,2,2019,UG
+702,Lab 1 - C Programming,2B03ICSC,L,9,2,2020,UG
+703,Advanced C Programming,2B02ICSC,T,9,2,2020,UG
+704,Web Technology,6B20ICSC,T,9,6,2020,PG
+705,Introduction to Deep Learning,6B21ICSC,T,9,6,2020,PG
+706,Computer Networks,6B22ICSC,T,9,6,2020,PG
+707,Design and Analysis of Algorithms,6B23ICSC,T,9,6,2020,PG
+708,Lab-8: Web Technology,6B24ICSC,L,9,6,2020,PG
+709,Project,6B25ICSC,L,9,6,2020,PG
+710,Novel Vaayana,5D03MAL,T,5,5,2019,UG
+711,Mathematical Models of Machine Learning - 1,7B26ICSC,T,9,7,2020,PG
+712,Theory of Computation,7B27ICSC,T,9,7,2020,PG
+713,Soft Computing Techniques,7B28ICSC,T,9,7,2020,PG
+714,Digital Image Processing,7B29ICSC,T,9,7,2020,PG
+715,Lab-9: Digital Image Processing,7B31ICSC,L,9,7,2020,PG
+716,Lab-10 : Soft Computing Techniques,7B32ICSC,L,9,7,2020,PG
+717,Mathematical Models of Machine Learning - II,8B33ICSC,T,9,8,2020,PG
+718,Advanced Artificial Inteligence,8B34ICSC,T,9,8,2020,PG
+719,Advanced Machine Learning Techniques,8B35ICSC,T,9,8,2020,PG
+720,Data Mining,8B36ICSC,T,9,8,2020,PG
+721,Research Methodology,8B37ICSC,T,9,8,2020,PG
+722,Lab-11 Case Study (Data Mining),8B38ICSC,L,9,8,2020,PG
+723,Lab-12 Advanced Machine Learning,8B39ICSC,L,9,8,2020,PG

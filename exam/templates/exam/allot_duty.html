@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Preferences and Duty Allocation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            margin: 20px;
+        }
+        table {
+            background-color: #ffffff;
+            border-collapse: collapse;
+            width: 100%;
+            margin: 10px 0;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #dddddd;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4 text-center"><b>Allocate Duty</b></h1>
+
+        {% for exam_date, preferences in exam_dates.items %}
+        <h5>Exam Date: {{ exam_date }}</h5>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Teacher Name</th>
+                    <th>Preferred Date</th>
+                    <th>Allocate Duty</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for preference in preferences %}
+                <tr>
+                    <td>{{ preference.teacher_id.username }}</td>
+                    <td>{{ preference.date }}</td>
+                    <td>
+                        <form method="post" action="{% url 'allot_duty' %}">
+                            {% csrf_token %}
+                            <input type="hidden" name="teacher_id" value="{{ preference.teacher_id.id }}">
+                            <input type="hidden" name="course_id" value="{{ preference.course_id_id }}">
+                            <input type="hidden" name="date" value="{{ preference.date }}">
+                            <select name="room_id" class="form-control" required>
+                                <option value="">Select Room</option>
+                                <!-- Replace with your room options -->
+                                <option value="1">Room 1</option>
+                                <option value="2">Room 2</option>
+                                <option value="3">Room 3</option>
+                            </select>
+                            <button type="submit" class="btn btn-primary mt-2">Allocate</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endfor %}
+        <a href="{% url 'chief_dashboard' %}" class="btn btn-secondary back-button">Back to Chief Dashboard</a>
+    </div>
+</body>
+</html>

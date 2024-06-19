@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 700px;
+            margin: 150px auto;
+            margin-top:50px;
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .container2 {
+            max-width: 900px;
+            margin: 150px auto;
+            margin-bottom:0px;
+            text-align: center;
+            background-color: #fff;
+            padding: 0px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            margin-right: 10px;
+            width:40%;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .logout {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f44336;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+        }
+        .logout:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Teacher Dashboard</h1>
+        <div class="section">
+            <a href="{% url 'upload_preferences' %}" class="button">Uploading Preference</a>
+        </div>
+        <div class="section">
+            <a href="{% url 'view_alloted_duty' %}" class="button">Alloted Duty</a>
+        </div>
+        <div class="section">
+            <a href="{% url 'view_summary' %}" class="button">View Summary</a>
+        </div>
+        <div>
+            <a href="{% url 'logout' %}" class="logout">Logout</a>
+        </div>
+    </div>
+    {% if latest_exams %}
+        <div class="container2">
+            <p>Latest Exams Announced:</p>
+            {% for exam in latest_exams %}
+                <div style="margin-bottom: 0px;">
+                    <p>The Semester {{ exam.sem }} exam for {{ exam.grad_level }} students is scheduled to take place on {{ exam.date }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="container">
+            <p>No exams announced yet.</p>
+        </div>
+    {% endif %}
+
+</body>
+</html>

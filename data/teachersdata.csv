@@ -1,0 +1,184 @@
+teacher_id,name,dept_id
+1,Mithun A V,9
+2,Pushpaja P V,12
+3,Manjula C,7
+4,Prajith P K,7
+5,Agretious Thomas K,7
+6,Subrahmanya Prasad K,7
+7,Karunakaran V,8
+8,Deepthi P V,8
+9,Salini N G,8
+10,Mohanan A,8
+11,Rajeesh P,8
+12,Mangala K,8
+13,Purshothaman V V,14
+14,Jisha P V,14
+15,Vijayakumar V,14
+16,Sabitha A,14
+17,Ashokan A,1
+18,Retheesh P K,1
+19,Anoopkumar M,1
+20,Vidya M,2
+21,Shayini O,2
+22,Anjaly Nair M K,2
+23,Namratha Monoharan,2
+24,Biju N C,2
+25,Sithara P M,2
+26,Rukhaya M K,2
+27,Indulekha K R,2
+28,Jnaneswari C,3
+29,Sebastian P T,4
+30,Sudha K K,4
+31,Jayashree Nair K,4
+32,Sureshkumar K S,4
+33,Nandakumar K,4
+34,Rajeevan C P,4
+35,Sharafunnissa C H,4
+36,Ambikasutan M,5
+37,Sheeja K P,5
+38,Dinesh T,10
+39,Reeja P V,10
+40,Shamna A,10
+41,Sreedharan E A,15
+42,Anitha K B,11
+43,Udayanandan K M,11
+44,Sidharthan P V,11
+45,Sathish R K,11
+46,Murali K V,11
+47,Naseema K,11
+48,Neena Raman P,11
+49,Rameshkumar R,11
+50,Sathyan T V,11
+51,Muralidharan Nambiar M,6
+52,Rajan K,12
+53,Vijayan T,12
+54,Radhakrishnan Nair K,12
+55,Supriya N T,13
+56,Saraniya Pradeep,13
+57,Anoja K S,13
+58,Meenakumari V M,3
+59,Shini V,5
+60,Dhanya Keepperi,5
+61,Dhanya P,5
+62,Rekha P,12
+63,Shinara M,12
+64,Anu A P,16
+65,Pankaj Ayikkomath,14
+66,Ramya K,14
+67,Aparna K,14
+68,Prasanth K,14
+69,Praseetha M,13
+70,Poornima Shenoy S,12
+71,Sreejaya V K,12
+72,Vidya A V,12
+73,Mini M,13
+74,Shreni P,2
+75,Liji K,4
+76,Sandhya,2
+77,Amrutha,2
+78,Amrutha G K,14
+79,Jisha,13
+80,Geethu K K,12
+81,Resmi B G,8
+82,Arun Thomas,8
+83,Lovely Abraham T,12
+84,Grinjo Joseph,2
+85,Anoop Varghese,2
+86,Pratheesh,12
+87,Vinesh Kumar K V,1
+88,Dhanya Thekkedath,16
+89,Sreevani,14
+90,Thabsheera,6
+91,Divya Geenish,14
+92,Jaseera A,6
+93,Sharaniya L K,4
+94,Jithina P C,1
+95,Chaithanya P,10
+96,Likhija K,13
+97,Sruthi M,14
+98,Nidhina,14
+99,Geethulakshmi K,11
+100,Salini K,11
+101,Varun N,11
+102,Amrutha K P,12
+103,amc,12
+104,Vijina C,1
+105,Shahina K V,4
+106,Haza,13
+107,Haritha,12
+108,Dheera K R,14
+109,Sabeena P P,14
+110,Sruthina,6
+111,Nimmi P K,10
+112,Reshma Tom,4
+113,Sreena K,4
+114,Udaya A,12
+115,Sunila V,12
+116,Vanaja K V,5
+117,Ambili K,5
+118,Athena G S,8
+119,Anisha M,2
+120,Rasna M V,2
+121,Panchami Mohan K V,11
+122,Rasitha Lakshmi P,11
+123,Greeshma K V,3
+124,Silja Mathew,3
+126,Thejaswi D Nair,2
+127,Anand R,2
+128,Shyma C,6
+129,Jesna Tomy,1
+130,Rajeena Beevi,5
+131,Shilpa V,5
+132,Nishitha N,14
+133,Office,17
+134,Ajesh A M,4
+135,Shine Raj S N,10
+136,Sumalatha A,12
+137,Sadma T,12
+138,Swathi Krishna C,7
+139,Roshni,1
+140,Sarathkumar V,5
+141,Anjali Sreenivas P K,5
+142,Vishnu P. S.,5
+143,Vijisha,5
+144,Athira K M,11
+145,Remya P K,9
+146,Sreelakshmi M G,14
+147,Fayas C,14
+148,Sanoj K,5
+149,Ramya N,9
+150,Nithya K,16
+151,Reshma T,10
+152,Neeli Chandran,11
+153,Athira P,10
+154,Lijina Johnson,1
+155,Akshitha,5
+156,Sreevidya K M,14
+157,Drisya M,12
+158,Midhuna Raj C V,13
+159,Soumya K,8
+160,Silpa P,7
+161,Sruthi T,11
+162,Seena K,9
+163,Ajina O V,3
+164,Keerthi K,11
+165,Jyothisha P,12
+166,Shyma P V,9
+167,Mithuna C Nair,12
+168,Haritha V V,11
+169,Sachin Gopu,1
+170,Aparna P,5
+171,Shumaira P,10
+172,Nirosha Das V,9
+173,Shibil V K,9
+174,Deepika Sahadevan,1
+175,Avitha Vijayan,14
+176,Dhanya Balan,8
+177,Sharath A,5
+178,Chithra M,11
+179,Susha N,11
+180,Amala Kuriakose,12
+181,Anjali V Kumar,2
+182,Salnamol T S,10
+183,Anju M,7
+184,Anjana Ashok,2

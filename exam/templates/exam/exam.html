@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .form-group label, .form-group select, .form-group input[type="date"], .form-group input[type="time"] {
+            width: 48%;
+            margin: 10px 0;
+        }
+        .form-group label {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+        select, input[type="submit"], .back-button, input[type="date"], input[type="time"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"], .back-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            width: 100%;
+        }
+        input[type="submit"]:hover, .back-button:hover {
+            background-color: #45a049;
+        }
+        .back-button {
+            background-color: #008CBA;
+        }
+        .back-button:hover {
+            background-color: #007BB5;
+        }
+    </style>
+    {% comment %} <script src="{% static 'js/jquery.min.js' %}"></script> {% endcomment %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#sem').change(function() {
+                var sem = $(this).val();
+                $.ajax({
+                    url: "{% url 'get_courses' %}",
+                    data: {
+                        'semester': sem
+                    },
+                    success: function(data) {
+                        console.log("data", data)
+                        var courseSelect = $('#exam');
+                        courseSelect.empty();
+                        // Add a placeholder option
+                        courseSelect.append('<option value="" disabled selected>Select Course</option>');
+                        // Loop through the data and add options
+                        $.each(data, function(index, course) {
+                            courseSelect.append($('<option>', {
+                                value: course.course_title,
+                                text: course.course_title,
+                                'data-course-id': course.course_title // Adding the course_id as a data attribute
+                            }));
+                        });
+                    }
+                });
+            });
+        });        
+    </script>
+
+</head>
+<body>       
+        <!-- Form for selecting details -->
+            <div class="container">
+                <h1>Add Time Table For Exam</h1>
+                
+                <!-- Form for selecting details -->
+                <form method="post" action="{% url 'exam_view' %}">
+                    {% csrf_token %}
+                    
+                    <div class="form-group">
+                        <label for="sem">Semester:</label>
+                        <select name="sem" id="sem" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                        
+                                                
+                        {% comment %} <label for="department">Department:</label>
+                        <select name="department" id="department" required>
+                            {% for department in departments %}
+                                <option value="{{ department }}">{{ department }}</option>
+                            {% endfor %}
+                        </select> {% endcomment %}
+                        <datalist id="exam">
+                            <!-- Options will be populated dynamically here -->
+                        </datalist>
+                        
+                        
+                                          <label for="exam">Exam:</label>
+                    <input  list="exam" name="exam" id="exam" required>
+                    
+                        <!-- Options will be populated by JavaScript -->
+        
+
+                        {% comment %} <label for="exam">Exam:</label>
+                        <select name="exam" id="exam" required>
+                            {% for course_code, course_title in courses. %}
+                                <option value="{{ course_title }}">{{ course_title }}</option>
+                            {% endfor %}
+                        </select>
+                     {% endcomment %}
+                        {% comment %} <label for="grad_level">Graduation Level:</label>
+                        <select name="grad_level" id="grad_level" required>
+                            <option value="UG">UG</option>
+                            <option value="PG">PG</option>
+                            <option value="Int Msc">Int Msc</option>
+                        </select> {% endcomment %}
+                         
+                        {% comment %} <label for="course_code">Course CODE:</label>
+                        <select name="course_code" id="course_code" required>
+                            {% for course_code, course_title in courses %}
+                                <option value="{{ course_code }}">{{ course_code }}</option>
+                            {% endfor %}
+                        </select> {% endcomment %}
+
+                
+                        <label for="date">Date:</label>
+                        <input type="date" name="date" id="date" required>
+                        
+                        <label for="time_from">Time From:</label>
+                        <input type="time" name="time_from" id="time_from" required>
+                        
+                        <label for="time_to">Time To:</label>
+                        <input type="time" name="time_to" id="time_to" required>
+                    </div>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+                    
+
+        <!-- Back button -->
+        <button class="back-button" onclick="window.history.back()">Go Back</button>
+    </div>
+</body>
+</html>
