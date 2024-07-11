@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Duty Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #main-header {
+            background-color: #630411;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #ab0000 3px solid;
+        }
+        #main-header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 24px;
+        }
+        #filter {
+            margin: 20px 0;
+            text-align: center;
+        }
+        #filter select, #filter input {
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #630411;
+            color: #fff;
+            cursor: pointer;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .center {
+            text-align: center;
+        }
+        .logout {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #630411;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+        }
+        .logout:hover {
+            background-color: #ab0000;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <h1>Teacher Duty Summary</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div id="filter">
+            <label for="department">Department:</label>
+            <select id="department" onchange="filterTable()">
+                <option value="all">All</option>
+                {% for department in departments %}
+                <option value="{{ department.dept_name }}">{{ department.dept_name }}</option>
+                {% endfor %}
+            </select>
+            <label for="date">Date:</label>
+            <input type="date" id="date" onchange="filterTable()">
+        </div>
+        <table id="dutyTable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Teacher Name</th>
+                    <th onclick="sortTable(1)">Department</th>
+                    <th onclick="sortTable(2)">Total Duties</th>
+                    <th onclick="sortTable(3)">Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for duty in duties %}
+                <tr data-department="{{ duty.department_name }}">
+                    <td>{{ duty.teacher_name }}</td>
+                    <td>{{ duty.department_name }}</td>
+                    <td>{{ duty.total_duties }}</td>
+                    <td>{{ duty.duty_date }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <a href="{% url 'chief_dashboard' %}" class="logout">Go Back</a>
+    </div>
+    <script>
+        function filterTable() {
+            var department = document.getElementById('department').value;
+            var date = document.getElementById('date').value;
+            var table = document.getElementById('dutyTable');
+            var tr = table.getElementsByTagName('tr');
+            
+            for (var i = 1; i < tr.length; i++) {
+                var tdDept = tr[i].getAttribute('data-department');
+                var tdDate = tr[i].getElementsByTagName('td')[3].textContent;
+                if ((department === 'all' || tdDept === department) && (date === '' || tdDate === date)) {
+                    tr[i].style.display = '';
+                } else {
+                    tr[i].style.display = 'none';
+                }
+            }
+        }
+
+        function sortTable(n) {
+            var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+            table = document.getElementById("dutyTable");
+            switching = true;
+            dir = "asc"; 
+            while (switching) {
+                switching = false;
+                rows = table.rows;
+                for (i = 1; i < (rows.length - 1); i++) {
+                    shouldSwitch = false;
+                    x = rows[i].getElementsByTagName("TD")[n];
+                    y = rows[i + 1].getElementsByTagName("TD")[n];
+                    if (dir == "asc") {
+                        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                            shouldSwitch= true;
+                            break;
+                        }
+                    } else if (dir == "desc") {
+                        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                            shouldSwitch= true;
+                            break;
+                        }
+                    }
+                }
+                if (shouldSwitch) {
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                    switchcount ++; 
+                } else {
+                    if (switchcount == 0 && dir == "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

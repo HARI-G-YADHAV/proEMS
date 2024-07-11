@@ -1,23 +1,68 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>View Summeru</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Summary of Duties</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+            font-family: Arial, sans-serif;
+            /* Background image */
+            background-image: url('/staticfiles/admin/img/bgimg.jpg'); /* Update the path */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh; /* Ensure full viewport height */
+        }
+        .container {
+            max-width: 800px;
+            margin-top: 100px;
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1,h3 {
+            color: #ab0000;
+        }
+        .btn-back {
+            margin-top: 20px;
+        }
+        .duty-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        .no-duties {
+            font-style: italic;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4"><b>Total Summary of Duties</b></h1>
+
+        {% if my_duties %}
+        <h3>Duties List:</h3>
+        <div class="list-group">
+            {% for duty in my_duties %}
+            <div class="duty-item">
+                <p class="mb-1">{{ duty.date }} - Course: {{ duty.course_id }}, Room: {{ duty.room_id }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="no-duties">No duties allocated.</p>
+        {% endif %}
         
-        <script src="" async defer></script>
-        <h1>view_summary</h1>
-    </body>
+        <p class="mt-4">Total number of duties taken: <strong>{{ total_duties }}</strong></p>
+        
+        <a href="{% url 'teacher_dashboard' %}" class="btn btn-secondary btn-back">&laquo; Back to Dashboard</a>
+    </div>
+</body>
 </html>

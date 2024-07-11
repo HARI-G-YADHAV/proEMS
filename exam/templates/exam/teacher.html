@@ -24,7 +24,8 @@
         .container2 {
             max-width: 900px;
             margin: 150px auto;
-            margin-bottom:0px;
+            margin-bottom:20px;
+            margin-top:50px;
             text-align: center;
             background-color: #fff;
             padding: 0px;
@@ -43,7 +44,7 @@
         .button {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #4CAF50;
+            background-color: #ab0000;
             color: white;
             text-decoration: none;
             border: none;
@@ -51,16 +52,16 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
             font-size: 16px;
-            margin-right: 10px;
-            width:40%;
+            margin-right: 0px;
+            width:30%;
         }
         .button:hover {
-            background-color: #45a049;
+            background-color: #630411;
         }
         .logout {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #f44336;
+            background-color: #336b36;
             color: white;
             text-decoration: none;
             border: none;
@@ -100,7 +101,7 @@
             {% endfor %}
         </div>
     {% else %}
-        <div class="container">
+        <div class="container2">
             <p>No exams announced yet.</p>
         </div>
     {% endif %}

@@ -10,7 +10,7 @@ class Exam(models.Model):
     grad_level = models.CharField(max_length=20)
     date = models.DateField(default="2020-01-01")
 
-    def __str__(self):
+    def __str__(self):      
         return self.grad_level
 
 class Department(models.Model):
@@ -63,6 +63,7 @@ class teacherTable(models.Model):
     name = models.CharField(max_length=40)
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
 
+
 class room(models.Model):
     room_id=models.IntegerField()
     room_no=models.IntegerField()
@@ -88,7 +89,10 @@ class Timetable(models.Model):
 
 
 class dutyAllotment(models.Model):
-    teacher_id = models.ForeignKey(teacherTable, default=1, on_delete=models.CASCADE)
-    course_id=models.ForeignKey(Exam,on_delete=models.CASCADE)
-    date=models.DateField()
-    room_id=models.ForeignKey(room,on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
+    course_id = models.ForeignKey(ExamTimeTable, on_delete=models.CASCADE)
+    date = models.DateField()
+    room_id = models.ForeignKey(room, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.user.username} - {self.course_id} on {self.date}"

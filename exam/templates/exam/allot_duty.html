@@ -22,14 +22,40 @@
             border: 1px solid #dddddd;
         }
         th {
-            background-color: #007bff;
+            background-color: #5e0101;
             color: white;
+        }
+        input[type="submit"], .back-button, .fixed-button {
+            background-color: #ab0000;
+            color: white;
+            border: none;
+            width: 30%;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover, .back-button:hover, .fixed-button:hover {
+            background-color: #5e0101;
+        }
+        .fixed-button {
+            position: fixed;
+            top: 20px;
+            right: 30px;
+            z-index: 1000;
+            width: auto;
+            padding: 10px 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="my-4 text-center"><b>Allocate Duty</b></h1>
+        <h1 class="my-4 text-center"><b>Allote Duty</b></h1>
+
+        {% if messages %}
+        <div class="alert alert-success" role="alert">
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        </div>
+        {% endif %}
 
         {% for exam_date, preferences in exam_dates.items %}
         <h5>Exam Date: {{ exam_date }}</h5>
@@ -47,19 +73,29 @@
                     <td>{{ preference.teacher_id.username }}</td>
                     <td>{{ preference.date }}</td>
                     <td>
-                        <form method="post" action="{% url 'allot_duty' %}">
+                        <form method="post" action="">
                             {% csrf_token %}
-                            <input type="hidden" name="teacher_id" value="{{ preference.teacher_id.id }}">
-                            <input type="hidden" name="course_id" value="{{ preference.course_id_id }}">
-                            <input type="hidden" name="date" value="{{ preference.date }}">
+                            <input type="hidden" name="user" value="{{ preference.teacher_id.id }}">
+                            <input type="hidden" name="course_id" value="{{ preference.course_id.id }}">
+                            <input type="hidden" name="date" value="{{ preference.date|date:'Y-m-d' }}">
+            
+                            {% if user.is_chief %}  <!-- Check if the user is a chief -->
+                            <select name="user" class="form-control" required>
+                                <option value="">Select Teacher</option>
+                                {% for teacher in teachers %}
+                                <option value="{{ teacher.teacher_id }}">{{ teacher.name }}</option>
+                                {% endfor %}
+                            </select>
+                            {% else %}
                             <select name="room_id" class="form-control" required>
                                 <option value="">Select Room</option>
-                                <!-- Replace with your room options -->
-                                <option value="1">Room 1</option>
-                                <option value="2">Room 2</option>
-                                <option value="3">Room 3</option>
+                                {% for room in rooms %}
+                                <option value="{{ room.id }}">{{ room.room_no }}</option>
+                                {% endfor %}
                             </select>
-                            <button type="submit" class="btn btn-primary mt-2">Allocate</button>
+                            {% endif %}
+                            
+                            <button type="submit" class="btn btn-primary back-button">Allocate</button>
                         </form>
                     </td>
                 </tr>
@@ -69,5 +105,6 @@
         {% endfor %}
         <a href="{% url 'chief_dashboard' %}" class="btn btn-secondary back-button">Back to Chief Dashboard</a>
     </div>
+    <a href="{% url 'no_preference_duty' %}" class="btn btn-primary fixed-button">Allot more Duties</a>
 </body>
 </html>

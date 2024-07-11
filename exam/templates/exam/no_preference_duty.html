@@ -1,0 +1,211 @@
+{% load custom_filters %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allot Duty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #ab0000;
+        }
+        .form-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #5e0101;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .sidebar {
+            background-color: #5e0101;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            overflow: hidden;
+            position: fixed;
+            right: 0;
+            top: 0;
+            transition: width 0.3s;
+            width: 60px;
+            z-index: 1000;
+        }
+        .sidebar:hover {
+            width: 200px;
+        }
+        .sidebar button, .sidebar a {
+            background-color: #5e0101;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            display: block;
+            font-size: 16px;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            width: 80%;
+        }
+        .sidebar button:hover, .sidebar a:hover {
+            background-color: #ab0000;
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .info {
+            color: #555;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .form-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .form-container ul li {
+            background-color: #e9ecef;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 5px 0;
+            padding: 10px;
+        }
+        .small-table {
+            margin-top: 10px;
+            overflow-x: auto;
+        }
+        .small-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .small-table th, .small-table td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .small-table th {
+            background-color: #5e0101;
+            color: #fff;
+        }
+        .small-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .selected {
+            background-color: #d1ecf1;
+        }
+    </style>
+</head>
+<body>
+    <h1><b>Allot Duty on Non Preference</b></h1>
+
+    <div class="form-container">
+        <h2>Allotted Duties for Exam</h2>
+        <div class="small-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Title</th>
+                        <th>Date</th>
+                        <th>Teachers Allotted</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for course, count in allotted_teachers.items %}
+                        <tr>
+                            <td>{{ course.course_id.course_title }}</td>
+                            <td>{{ course.date }}</td>
+                            <td>{{ count }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <form method="POST" id="allot-duty-form">
+        {% csrf_token %}
+        <div class="form-container">
+            <h2>Select the Examination</h2>
+            <div class="info">{{ form.course_id.label_tag }} {{ form.course_id }}</div>
+            <div class="info">{{ form.date.label_tag }} {{ form.date }}</div>
+            <div class="info">{{ form.room_id.label_tag }} {{ form.room_id }}</div>
+        </div>
+        <div class="form-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Teacher Name</th>
+                        <th>Total Duties Taken</th>
+                        <th>Allot Duty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for teacher in available_teachers %}
+                        <tr>
+                            <td>{{ teacher.name }}</td>
+                            <td>
+                                {% if teacher.user %}
+                                    {{ duties_count|get_item:teacher.user.id|default:0 }}
+                                {% else %}
+                                    N/A
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if teacher.user %}
+                                    <input type="radio" name="user" value="{{ teacher.user.id }}">
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </form>
+
+    <div class="sidebar">
+        <button type="submit" form="allot-duty-form">Allot Duty</button>
+        <a href="{% url 'allot_duty' %}">
+            <button type="button">Back</button>
+        </a>
+        <a href="{% url 'logout' %}">
+            <button type="button">Logout</button>
+        </a>
+    </div>
+
+    <script>
+        // Add a script to highlight the row when a radio button is selected
+        document.querySelectorAll('input[type="radio"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                document.querySelectorAll('tr').forEach(row => {
+                    row.classList.remove('selected');
+                });
+                this.closest('tr').classList.add('selected');
+            });
+        });
+    </script>
+</body>
+</html>

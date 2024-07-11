@@ -9,49 +9,52 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8; /* Light gray background */
-            color: #333; /* Dark gray text color */
+            background-color: #f8f8f8;
+            color: #333;
+            overflow: hidden;
+            height: 100%;
         }
 
         header {
-            background-color: #1a1a1a; /* Dark gray header background */
+            background-color: #5e0101;
             padding: 15px;
             text-align: center;
-            color: #fff; /* White header text color */
+            color: #fff;
         }
 
         nav {
-            display: flex;
-            flex-direction: column; /* Arrange the navigation links vertically */
-            align-items: center; /* Center the links horizontally */
-            margin-top: 40px; /* Add some space between the header and the nav */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 20px; /* Space between buttons */
+            justify-items: center; /* Center buttons horizontally */
+            margin: 40px auto; /* Space above and below the buttons */
+            width: fit-content; /* Center the grid container */
         }
 
         nav a {
-            display: block;
-            width: 200px; /* Fixed width for links */
-            margin: 10px 0; /* Vertical margin between links */
-            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 180px;
+            height: 60px; /* Fixed height for buttons */
             text-decoration: none;
-            color: #fff; /* White link text color */
-            background-color: #4CAF50; /* Green link background color */
-            border-radius: 10px; /* Rounded corners */
-            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effect */
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
-            overflow: hidden; /* Hide overflowing box shadow */
-            background: linear-gradient(145deg, #4CAF50, #388E3C); /* Gradient background */
+            color: #fff;
+            background-color: #D32F2F;
+            border-radius: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(145deg, #FF5252, #D32F2F);
         }
 
         nav a:hover {
-            background: linear-gradient(145deg, #45a049, #318E3B); /* Darker gradient on hover */
-            transform: translateY(-5px); /* Move up slightly on hover */
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Increase shadow size on hover */
+            background: linear-gradient(145deg, #B71C1C, #D32F2F, #F44336);
+            transform: translateY(-5px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
             text-align: center;
-            margin-top: 40px; /* Add some space between the header and the content */
+            margin-top: 40px;
             font-size: 2.5em;
         }
 
@@ -64,9 +67,9 @@
 
         .container {
             display: flex;
-            justify-content: center; /* Center the container contents */
+            justify-content: center;
             align-items: center;
-            height: calc(100vh - 100px); /* Full height minus header and nav height */
+            height: calc(100vh - 100px);
         }
     </style>
 </head>
@@ -80,14 +83,17 @@
         <a href="{% url 'announceExam' %}">
             Announce Exam
         </a>
-        <a href="{% url 'exam_view' %}">
+        <a href="{% url 'exam' %}">
             Add Time Table
         </a>
         <a href="{% url 'allot_duty' %}">
             Allot Duty
         </a>
         <a href="{% url 'edit_teacher' %}">
-            Add/Delete Teacher
+            Add Teacher
+        </a>
+        <a href="{% url 'total_summary' %}">
+            Duty Summary
         </a>
         <a href="{% url 'logout' %}">
             Logout
@@ -97,5 +103,19 @@
     <div class="container">
         <!-- Your existing content goes here -->
     </div>
+
+    <script>
+        // JavaScript to add more attractive effects to the buttons
+        document.querySelectorAll('nav a').forEach(button => {
+            button.addEventListener('mouseover', () => {
+                button.style.transform = 'scale(1.1)'; // Scale up on hover
+                button.style.boxShadow = '0 8px 10px rgba(0, 0, 0, 0.3)'; // Increase shadow
+            });
+            button.addEventListener('mouseout', () => {
+                button.style.transform = 'scale(1)'; // Scale back to original
+                button.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)'; // Original shadow
+            });
+        });
+    </script>
 </body>
 </html>
